@@ -1,0 +1,11 @@
+<form action="/<%= @entry.id %>" method="post" id="edit">
+	<input type="hidden" name="_method" value="put">
+	<label>Title</label>
+	<textarea name="title"><%= @entry.title %></textarea>
+	<label>Subject</label>
+	<textarea name="subject"><%= @entry.subject %></textarea>
+	<label>Content</label>
+	<textarea name="content"><%= @entry.content %></textarea>
+	<input type="submit">
+	<p><a href="/<%= @entry.id %>/delete">DELETE THIS SHIT</a></p>
+</form>

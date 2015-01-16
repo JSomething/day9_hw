@@ -1,0 +1,15 @@
+<h3>BLOGS</h3>
+
+<a href="/new">Add Entry</a>
+<ul>
+	<% @entry.each do |entry| %>
+		<article>
+			<strong><%= entry.title %></strong>
+			<br>
+			<i><%= entry.subject %></i>
+			<br>
+			<%= entry.content %>
+			<span><a href="/<%= entry.id %>">EDIT</a></span>
+		</article>
+	<% end %>
+</ul>
